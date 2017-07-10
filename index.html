@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <title>Data-Science</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="MyStyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body id="myPage">
+
+
+
+      <!-- Sidebar on Click -->
+
+      <!--Sidebar use it later or remove it
+      <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xxlarge" style="diplay:none;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+        <i class="fa fa-remove"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button">Link 5</a>
+      </nav>
+    -->
+      <!-- Nav-Bar-->
+      <div >
+  <div class="w3-bar w3-theme-d2 w3-right-align">
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Start Learning</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CheatSheets</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+ </div>
+
+
+ <!-- Page content -->
+ <div class="w3-content" style="max-width:1400px;margin-top:0px">
+
+   <!-- Automatic Slideshow Images -->
+   <div class="mySlides w3-display-container w3-center">
+     <img src="Datasci0.png" style="width:100%">
+   </div>
+
+   <div class="mySlides w3-display-container w3-center">
+     <img src="Datasci1.jpeg" style="width:100%">
+   </div>
+
+
+ </div>
+
+ <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ </div>
+ <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+</script>
+
+    </body>
+
+</html>
